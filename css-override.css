@@ -17,3 +17,7 @@ html {
 .nav-link-new {
     text-decoration: none;
 }
+
+.headline-image {
+    width: 100%;
+}
