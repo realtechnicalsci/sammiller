@@ -1,3 +1,9 @@
+html {
+    overflow-x: hidden;
+    }
+    
+    
+
 .text-black {
     color: black !important;
 }
