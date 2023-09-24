@@ -1,10 +1,11 @@
 .text-black {
     color: black !important;
 }
-.nav-link-new {
-    text-decoration: none;
-}
 
 .navbar {
-    box-shadow: 3px -28px 100px white,0 6px 20px 0 white !important
+    box-shadow: 1px -1px 100px white,0 0px 0px 0 blue !important;
+}
+
+.nav-link-new {
+    text-decoration: none;
 }

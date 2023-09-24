@@ -8,27 +8,109 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./fonts-override.css">
+    <link rel="stylesheet" href="./css-override.css">
+    <link rel="stylesheet" href="./navbar-override.css">
     <!--NAVBAR-->
     <div class="collapse" id="navbarToggleExternalContent">
         <div style="background-color: black !important;" class="bg-light p-4">
-            <a class="nav-link-new text-black" href="./index.html"><h2 class="text-white h1">Home</h2></a>
-            <a class="nav-link-new dark" href="./stills/index.html"><h2 class="text-white h1">Stills</h2></a>
-            <a class="nav-link-new dark" href="./projects/index.html"><h2 class="text-white h1">Projects</h2></a>
-            <a class="nav-link-new" href="./contact"><h2 class="text-white h1">Contact</h2></a>
-            <a class="nav-link-new" href="./contact"><h2 class="text-white h1">Social</h2></a>
+            <a id="nav-link-new" class="nav-link-new text-black" href="./index.html"><h2 class="text-white h1 h1-link">Home</h2></a>
+            <a id="nav-link-new" class="nav-link-new dark" href="./stills/index.html"><h2 class="text-white h1 h1-link">Stills</h2></a>
+            <a id="nav-link-new" class="nav-link-new dark" href="./projects/index.html"><h2 class="text-white h1 h1-link">Projects</h2></a>
+            <a id="nav-link-new" class="nav-link-new" href="./contact"><h2 class="text-white h1 h1-link">Contact</h2></a>
+            <a id="nav-link-new" class="nav-link-new" href="./contact"><h2 class="text-white h1 h1-link">Social</h2></a>
           <img class="d-none d-lg-block" src="" alt="">
         </div>
       </div>
       <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+            <button class="navbar-toggler toggler-rotate-c icon-black focus-none border-none "type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
           <h2 style="text-align: left !important;">Sam Miller</h2>
         </div>
       </nav>
-      <link rel="stylesheet" href="./fonts-override.css">
-      <link rel="stylesheet" href="./css-override.css">
+
+      <script>
+        //Grab the buttons
+let toggleNormal = document.getElementsByClassName("toggler-normal");
+let toggleRotate = document.getElementsByClassName("toggler-spin-360");
+let toggleCC = document.getElementsByClassName("toggler-rotate-cc");
+let toggleC = document.getElementsByClassName("toggler-rotate-c");
+let toggleArrowLeft = document.getElementsByClassName("toggler-rotate-cc-arrow-left");
+let toggleArrowRight = document.getElementsByClassName("toggler-rotate-c-arrow-right");
+let toggleArrowUp = document.getElementsByClassName("toggler-rotate-c-arrow-up");
+let toggleArrowDown = document.getElementsByClassName("toggler-rotate-cc-arrow-down");
+
+/*Try and toggle classes*/
+/*Use try catch to avoid errors if button is not on page. Using get by class name then going through the array and adding listeners will make it so that multiple instances of the button will work on the same page.*/
+
+try {
+  for (let i = 0; i < toggleNormal.length; i++) {
+    toggleNormal[i].addEventListener("click", function () {
+      this.classList.toggle("normal-toggle");
+    });
+  }
+} catch {}
+
+try {
+  for (let i = 0; i < toggleRotate.length; i++) {
+    toggleRotate[i].addEventListener("click", function () {
+      this.classList.toggle("rotate-360");
+    });
+  }
+} catch {}
+
+try {
+  for (let i = 0; i < toggleCC.length; i++) {
+    toggleCC[i].addEventListener("click", function () {
+      this.classList.toggle("rotate-cc");
+    });
+  }
+} catch {}
+
+try {
+  for (let i = 0; i < toggleC.length; i++) {
+    toggleC[i].addEventListener("click", function () {
+      this.classList.toggle("rotate-c");
+    });
+  }
+} catch {}
+
+try {
+  for (let i = 0; i < toggleArrowLeft.length; i++) {
+    toggleArrowLeft[i].addEventListener("click", function () {
+      this.classList.toggle("rotate-cc-arrow-left");
+    });
+  }
+} catch {}
+
+try {
+  for (let i = 0; i < toggleArrowRight.length; i++) {
+    toggleArrowRight[i].addEventListener("click", function () {
+      this.classList.toggle("rotate-c-arrow-right");
+    });
+  }
+} catch {}
+
+try {
+  for (let i = 0; i < toggleArrowUp.length; i++) {
+    toggleArrowUp[i].addEventListener("click", function () {
+      this.classList.toggle("rotate-c-arrow-up");
+    });
+  }
+} catch {}
+
+try {
+  for (let i = 0; i < toggleArrowDown.length; i++) {
+    toggleArrowDown[i].addEventListener("click", function () {
+      this.classList.toggle("rotate-cc-arrow-down");
+    });
+  }
+} catch {}
+
+      </script>
       
       <!--rain animation-->
       <style media="screen">

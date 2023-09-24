@@ -1,0 +1,327 @@
+:root {
+    /*Colors*/
+    --AlmostWhite: hsl(0, 0%, 98%);
+    --AlmostBlack: hsl(0, 0%, 8%);
+    --Blue: hsl(209, 41%, 48%);
+    --Dusk: hsl(297, 27%, 26%);
+    --Dawn: hsl(36, 100%, 64%);
+    --MediumGray: hsl(0, 0%, 41%);
+    --Mint: hsl(135, 100%, 74%);
+    --Purple:hsl(246, 37%, 60%);
+    --Red: hsl(4, 100%, 67%);
+    
+  }
+  
+  /*Simple page layout css*/
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  #main {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+  }
+  
+  /*Utilities*/
+  .border-none {
+    border: none !important;
+  }
+  
+  .focus-none {
+    box-shadow: none !important
+  }
+  
+  /*///////////////Navbar Toggler/////////////////////////////////////////////*/
+  /*Button Details*/
+  .navbar-toggler {
+    background-color: transparent;
+    /*Button Border*/
+    border: .2rem solid var(--AlmostBlack);
+    border-radius: 0.4rem;
+    /*Force pointer*/
+    cursor: pointer;
+    
+    /*Center icon*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    /*Button Size*/
+    height: 3rem;
+    width: 3rem;
+    
+    /*Keep on top of elements*/
+    z-index: 9999;
+  }
+  
+  .navbar-toggler:focus {
+    /*h-offset, v-offset, blur, spread, color*/
+    box-shadow: 0rem 0rem .2rem .2rem;
+    -moz-box-shadow: 0rem 0rem .2rem .2rem;
+    -webkit-box-shadow: 0rem 0rem .2rem .2rem;
+  }
+   
+  /*Icon Details*/
+    .navbar-toggler-icon,
+    .navbar-toggler-icon:before,
+    .navbar-toggler-icon:after {
+      /*Default Color*/
+      background-image: url('') !important;
+      background-color: var(--AlmostBlack);
+      border-radius: 0.5rem;
+      display: block;
+      
+      /*Icon Size*/
+      width: 2.5rem;
+      height: 0.2rem;
+      
+      /*Animation Transition*/
+      transition: 0.5s;
+      
+      /*Content*/
+      content: "";
+      position: absolute;
+    }
+    
+    /*Top*/
+    .navbar-toggler-icon:before {
+      bottom: 0.7rem;
+    }
+    
+    /*Bottom*/
+    .navbar-toggler-icon:after {
+      top: 0.7rem;
+    }
+  
+  /*////////////Color Options/////////////*/
+  /*Default is dark*/
+  
+  /*Light*/
+  .icon-light .navbar-toggler-icon,
+  .icon-light .navbar-toggler-icon:before,
+  .icon-light .navbar-toggler-icon:after {
+    background-color: var(--AlmostWhite);
+  }
+  
+  .icon-light {
+    border-color: var(--AlmostWhite) !important;
+    color: var(--AlmostWhite) !important;
+  }
+  
+  /*Dusk*/
+  .icon-dusk .navbar-toggler-icon,
+  .icon-dusk .navbar-toggler-icon:before,
+  .icon-dusk .navbar-toggler-icon:after {
+    background-color: var(--Dusk);
+  }
+  
+  .icon-dusk {
+    border-color: var(--Dusk) !important;
+    color: var(--Dusk) !important;
+  }
+  
+  /*Dawn*/
+  .icon-dawn .navbar-toggler-icon,
+  .icon-dawn .navbar-toggler-icon:before,
+  .icon-dawn .navbar-toggler-icon:after {
+    background-color: var(--Dawn);
+  }
+  
+  .icon-dawn {
+    border-color: var(--Dawn) !important;
+    color: var(--Dawn) !important;
+  }
+  
+  /*Blue*/
+  .icon-blue .navbar-toggler-icon,
+  .icon-blue .navbar-toggler-icon:before,
+  .icon-blue .navbar-toggler-icon:after {
+    background-color: var(--Blue);
+  }
+  
+  .icon-blue {
+    border-color: var(--Blue) !important;
+    color: var(--Blue) !important;
+  }
+  
+  /*Purple*/
+  .icon-purple .navbar-toggler-icon,
+  .icon-purple .navbar-toggler-icon:before,
+  .icon-purple .navbar-toggler-icon:after {
+    background-color: var(--Purple);
+  }
+  
+  .icon-purple {
+    border-color: var(--Purple) !important;
+    color: var(--Purple) !important;
+  }
+  
+  /*Red*/
+  .icon-red .navbar-toggler-icon,
+  .icon-red .navbar-toggler-icon:before,
+  .icon-red .navbar-toggler-icon:after {
+    background-color: var(--Red);
+  }
+  
+  .icon-red {
+    border-color: var(--Red) !important;
+    color: var(--Red) !important;
+  }
+  
+  /*Mint*/
+  .icon-mint .navbar-toggler-icon,
+  .icon-mint .navbar-toggler-icon:before,
+  .icon-mint .navbar-toggler-icon:after {
+    background-color: var(--Mint);
+  }
+  
+  .icon-mint {
+    border-color: var(--Mint) !important;
+    color: var(--Mint) !important;
+  }
+  
+  /*/////////Animations///////////////*/
+  /*Added in JS to the control*/
+  /*Regular animation*/
+  .normal-toggle .navbar-toggler-icon {
+    background-color: transparent;
+  }
+  
+  .normal-toggle .navbar-toggler-icon:before {
+    bottom: 0;
+    transform:rotate(-135deg);
+  }
+  
+   .normal-toggle .navbar-toggler-icon:after {
+    top: 0;
+    transform:rotate(135deg);
+  }
+  
+  /*360 Rotation*/
+  .rotate-360 .navbar-toggler-icon {
+    background-color: transparent;
+  }
+  
+  .rotate-360 .navbar-toggler-icon:before {
+    transform: rotate(-315deg);
+    bottom: 0;
+  }
+  
+  .rotate-360 .navbar-toggler-icon:after {
+    transform: rotate(315deg);
+    top: 0;
+  }
+  
+  /*Counter Clockwise Rotation*/
+  .rotate-cc .navbar-toggler-icon {
+    background-color: transparent;
+    transform: rotate(-90deg);
+  }
+  
+  .rotate-cc .navbar-toggler-icon:before {
+    bottom: 0;
+    transform: rotate(-45deg);
+  }
+  
+  .rotate-cc .navbar-toggler-icon:after {
+    top: 0;
+    transform: rotate(45deg);
+  }
+  
+  /*Clockwise Rotation*/
+  .rotate-c .navbar-toggler-icon {
+    background-color: transparent;
+    transform: rotate(90deg);
+  }
+  
+  .rotate-c .navbar-toggler-icon:before {
+    bottom: 0;
+    transform: rotate(-45deg);
+  }
+  
+  .rotate-c .navbar-toggler-icon:after {
+    top: 0;
+    transform: rotate(45deg);
+  }
+  
+  /*Arrow left */
+  .rotate-cc-arrow-left .navbar-toggler-icon {
+    transform: rotate(-360deg);
+  }
+  
+  .rotate-cc-arrow-left .navbar-toggler-icon:before {
+    bottom: 0;
+    width: 50%;
+    transform-origin: left;
+    transform: translateY(0.05rem) rotate(-45deg);
+  }
+  
+  .rotate-cc-arrow-left .navbar-toggler-icon:after {
+    top: 0;
+    width: 50%;
+    transform-origin: left;
+    transform: translateY(-0.05rem) rotate(45deg);
+  }
+  
+  /*Arrow Right*/
+  .rotate-c-arrow-right .navbar-toggler-icon {
+    transform: rotate(360deg);
+  }
+  
+  .rotate-c-arrow-right .navbar-toggler-icon:before {
+    bottom: 0;
+    width: 50%;
+    transform-origin: right;
+    transform: translateY(0.05rem) translateX(1.3rem) rotate(45deg);
+  }
+  
+  .rotate-c-arrow-right .navbar-toggler-icon:after {
+    top: 0;
+    width: 50%;
+    transform-origin: right;
+    transform: translateY(-0.05rem) translateX(1.3rem) rotate(-45deg);
+  }
+  
+  /*Arrow Up clockwise rotation*/
+  .rotate-c-arrow-up .navbar-toggler-icon {
+    transform: rotate(270deg);
+  }
+  
+  .rotate-c-arrow-up .navbar-toggler-icon:before {
+    bottom: 0;
+    width: 50%;
+    transform-origin: right;
+    transform: translateY(0.05rem) translateX(1.3rem) rotate(45deg);
+  }
+  
+  .rotate-c-arrow-up .navbar-toggler-icon:after {
+    top: 0;
+    width: 50%;
+    transform-origin: right;
+    transform: translateY(-0.05rem) translateX(1.3rem) rotate(-45deg);
+  }
+  
+  /*Arrow Down counter clockwise rotation*/
+  .rotate-cc-arrow-down .navbar-toggler-icon {
+    transform: rotate(-270deg);
+  }
+  
+  .rotate-cc-arrow-down .navbar-toggler-icon:before {
+    bottom: 0;
+    width: 50%;
+    transform-origin: right;
+    transform: translateY(0.05rem) translateX(1.3rem) rotate(45deg);
+  }
+  
+  .rotate-cc-arrow-down .navbar-toggler-icon:after {
+    top: 0;
+    width: 50%;
+    transform-origin: right;
+    transform: translateY(-0.05rem) translateX(1.3rem) rotate(-45deg);
+  }
+  
