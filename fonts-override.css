@@ -19,6 +19,10 @@ h1, h2, h3, h4, h5, h6, .nav-link {
     color: #fd0001;
  }
 
+ .contact {
+    color: #fd0001 !important;
+ }
+
 .phrase {
     font-size: 200px;
     font-family: 'inter', sans-serif !important;
