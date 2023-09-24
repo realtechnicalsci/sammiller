@@ -41,6 +41,10 @@ p {
 }
 
 .contactme {
-    text-decoration: none;
-    color: #0f3377;
+    text-decoration: none !important;
+    color: #0f3377 !important;
+}
+.contactme:hover {
+    text-decoration: none !important;
+    color: #fd0001 !important;
 }
