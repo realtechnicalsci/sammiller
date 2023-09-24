@@ -11,10 +11,11 @@
     <!--NAVBAR-->
     <div class="collapse" id="navbarToggleExternalContent">
         <div style="background-image: url('./nav/mountains.jpg');" class="bg-light p-4">
-          <a class="nav-link-new text-black" href=""><h2 class="text-black h2">Home</h2></a>
-          <a class="nav-link-new dark" href=""><h2 class="text-black h2">Projects</h2></a>
-          <a class="nav-link-new" href=""><h2 class="text-black h2">Contact Me</h2></a>
-          <a class="nav-link-new" href=""><h2 class="text-black h2">Social</h2></a>
+          <a class="nav-link-new text-black" href=""><h2 class="text-black h1">Home</h2></a>
+          <a class="nav-link-new dark" href=""><h2 class="text-black h1">Stills</h2></a>
+          <a class="nav-link-new dark" href=""><h2 class="text-black h1">Projects</h2></a>
+          <a class="nav-link-new" href=""><h2 class="text-black h1">Contact Me</h2></a>
+          <a class="nav-link-new" href=""><h2 class="text-black h1">Social</h2></a>
           <img class="d-none d-lg-block" src="" alt="">
         </div>
       </div>
@@ -28,9 +29,73 @@
       </nav>
       <link rel="stylesheet" href="fonts-override.css">
       <link rel="stylesheet" href="css-override.css">
+      
+      <style media="screen">
+        * {
+         margin: 0;
+         padding: 0;
+       }
+     
+    
+    
+    
+    
+       hr {
+         width: 50px;
+         border-color: transparent;
+         border-right-color: rgba(255, 255, 255, 0.7);
+         border-right-width: 50px;
+         position: absolute;
+         bottom: 100%;
+         transform-origin: 100% 50%;
+         animation-name: rain;
+         animation-duration: 1s;
+         animation-timing-function: linear;
+         animation-iteration-count: infinite;
+       }
+    
+       @keyframes rain {
+         from {
+           transform: rotate(105deg) translateX(0);
+         } 
+         to {
+           transform: rotate(105deg) translateX(calc(100vh + 20px));
+         }
+       }
+    
+    
+      </style>
+
+
 </head>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!--START OF PAGE CONTENT-->
 <body>
-   
+    
+    <canvas id="sparks"></canvas>
+    <div class="container text-center">
+        <canvas id="mycanvas"></canvas> 
+        <div class="row rain">
+          <div class="col-sm-8"><h1 class="phrase">Sam Miller</h1></div>
+          <div class="col-sm-4"><img src="sam-cut.png" class="img-fluid" alt=""></div>
+        </div>
+      </div>
 </body>
+<script type="text/javascript">
+
+    let hrElement;
+    let counter = 100;
+    for (let i = 0; i < counter; i++) {
+      hrElement = document.createElement("HR");
+      
+        hrElement.style.left = Math.floor(Math.random() * window.innerWidth) + "px";
+        hrElement.style.animationDuration = 0.2 + Math.random() * 0.3 + "s";
+        hrElement.style.animationDelay = Math.random() * 5 + "s";
+     
+      document.body.appendChild(hrElement);
+    }
+  
+   
+  
+  </script>
 </html>
