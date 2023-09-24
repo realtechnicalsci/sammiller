@@ -3,16 +3,18 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Assistant', sans-serif !important;
 }
+
+
+.phrase {
+    font-size: 200px;
+    font-family: 'inter', sans-serif !important;
+}
+
 @media screen and (max-width: 768px) {
     .phrase {
         font-size: 150px;
         font-family: 'inter', sans-serif !important;
     }
-}
-
-.phrase {
-    font-size: 200px;
-    font-family: 'inter', sans-serif !important;
 }
 
 p {
