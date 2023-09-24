@@ -39,3 +39,8 @@ h1, h2, h3, h4, h5, h6, .nav-link {
 p {
     font-family: 'inter', sans-serif !important !important;
 }
+
+.contactme {
+    text-decoration: none;
+    color: #0f3377;
+}
