@@ -13,25 +13,39 @@
     <link rel="stylesheet" href="./css-override.css">
     <link rel="stylesheet" href="./navbar-override.css">
     <!--NAVBAR-->
-    <div class="collapse" id="navbarToggleExternalContent">
-        <div style="background-color: black !important;" class="bg-light p-4">
-            <a id="nav-link-new" class="nav-link-new text-black" href="./index.html"><h2 class="text-white h1 h1-link">Home</h2></a>
-            <a id="nav-link-new" class="nav-link-new dark" href="./stills/index.html"><h2 class="text-white h1 h1-link">Stills</h2></a>
-            <a id="nav-link-new" class="nav-link-new dark" href="./projects/index.html"><h2 class="text-white h1 h1-link">Projects</h2></a>
-            <a id="nav-link-new" class="nav-link-new" href="./contact"><h2 class="text-white h1 h1-link">Contact</h2></a>
-            <a id="nav-link-new" class="nav-link-new" href="./social"><h2 class="text-white h1 h1-link">Social</h2></a>
-          <img class="d-none d-lg-block" src="" alt="">
-        </div>
-      </div>
-      <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <button class="navbar-toggler toggler-rotate-c icon-black focus-none border-none "type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-          <h2 style="text-align: left !important;">Sam Miller</h2>
+          <button class="navbar-toggler toggler-rotate-c icon-black focus-none border-none "type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+          <a class="navbar-brand" style="width: 100px;" href="#"><img class="img-fluid" style="" src="logo.png" alt=""></a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
 
+
+<!--ANIMATED BUTTON-->
       <script>
         //Grab the buttons
 let toggleNormal = document.getElementsByClassName("toggler-normal");
@@ -111,6 +125,8 @@ try {
 } catch {}
 
       </script>
+
+
       
       <!--rain animation-->
       <style media="screen">

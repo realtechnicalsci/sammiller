@@ -2,7 +2,9 @@ html {
     overflow-x: hidden;
     }
     
-    
+.navbar-toggler-icon::before, .navbar-toggler-icon::after, .navbar-toggler-icon {
+    background-color: #0f3377 !important;
+}
 
 .text-black {
     color: black !important;
