@@ -24,22 +24,19 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <h2>Sam Miller</h2>
+          <h2 style="text-align: left !important;">Sam Miller</h2>
         </div>
       </nav>
       <link rel="stylesheet" href="fonts-override.css">
       <link rel="stylesheet" href="css-override.css">
       
+      <!--rain animation-->
       <style media="screen">
         * {
          margin: 0;
          padding: 0;
        }
      
-    
-    
-    
-    
        hr {
          width: 50px;
          border-color: transparent;
@@ -71,15 +68,47 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <!--START OF PAGE CONTENT-->
 <body>
-    
-    <canvas id="sparks"></canvas>
+    <!--Rain-->
     <div class="container text-center">
-        <canvas id="mycanvas"></canvas> 
-        <div class="row rain">
+        <div class="row">
           <div class="col-sm-8"><h1 class="phrase">Sam Miller</h1></div>
           <div class="col-sm-4"><img src="sam-cut.png" class="img-fluid" alt=""></div>
         </div>
       </div>
+
+    <!--Content-->
+    
+    <div class="container">
+        <div class="row">
+          <div class="col-2">
+            1 of 3
+          </div>
+          <div class="col-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus pretium quam vulputate dignissim suspendisse in est ante in. Nunc scelerisque viverra mauris in aliquam. Nulla facilisi morbi tempus iaculis urna id volutpat lacus laoreet. Vitae auctor eu augue ut lectus arcu bibendum at. Arcu risus quis varius quam quisque id. Sem integer vitae justo eget magna. Id eu nisl nunc mi. Ut morbi tincidunt augue interdum. Sed blandit libero volutpat sed cras ornare arcu dui. Ac odio tempor orci dapibus ultrices in iaculis nunc. Eleifend quam adipiscing vitae proin sagittis. Sit amet luctus venenatis lectus magna fringilla urna. Et tortor at risus viverra adipiscing. Sed cras ornare arcu dui vivamus arcu felis bibendum. Elementum curabitur vitae nunc sed velit dignissim sodales ut. Massa tincidunt dui ut ornare lectus sit amet. Nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. Faucibus ornare suspendisse sed nisi lacus.
+
+                Sodales ut etiam sit amet nisl purus in mollis. Quis commodo odio aenean sed adipiscing diam donec adipiscing. A lacus vestibulum sed arcu. Mi bibendum neque egestas congue quisque egestas diam. Vel quam elementum pulvinar etiam non quam. Velit egestas dui id ornare arcu. Nam libero justo laoreet sit amet cursus sit amet dictum. Pretium lectus quam id leo in vitae turpis massa. Tristique risus nec feugiat in fermentum. Eu ultrices vitae auctor eu augue ut lectus arcu bibendum. Risus sed vulputate odio ut enim blandit volutpat maecenas. Risus pretium quam vulputate dignissim suspendisse. Sagittis vitae et leo duis ut diam quam nulla. Tempus egestas sed sed risus pretium. Erat nam at lectus urna. Amet facilisis magna etiam tempor orci.
+                
+                </p>
+          </div>
+          <div class="col-6">
+            <div style="padding: 20%;" id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://picsum.photos/200" class="d-block w-100" alt="https://picsum.photos/200">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://picsum.photos/201" class="d-block w-100" alt="https://picsum.photos/200">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://picsum.photos/202" class="d-block w-100" alt="https://picsum.photos/200">
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>     
+    </div>
+
+
 </body>
 <script type="text/javascript">
 
@@ -94,8 +123,28 @@
      
       document.body.appendChild(hrElement);
     }
-  
-   
-  
-  </script>
+ </script>
+  <footer>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://twitter.com/realtechsci">Code By Jack Miller</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <a href="#top">
+            <span class="navbar-text">
+              Return To Top ↑
+            </span>
+        </a>
+          </div>
+        </div>
+      </nav>
+  </footer>
 </html>
