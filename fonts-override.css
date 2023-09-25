@@ -6,7 +6,7 @@
     src: url(font/belgiano.otf);
   }
 
-h1, h2, h3, h4, h5, h6, .nav-link {
+h1, h2, h3, h4, h5, h6, .nav-link, .rotated-text {
     font-family: 'belgiano', sans-serif !important;
 }
 
@@ -47,4 +47,33 @@ p {
 .contactme:hover {
     text-decoration: none !important;
     color: #fd0001 !important;
+}
+
+.about-headline {
+    font-size: 8vw;
+    text-align: right;
+}
+
+@media screen and (max-width: 1068px) {
+    .about-headline {
+        font-size: 15vw;
+        text-align: right;
+    }
+}
+
+.rotated-text {
+    left: 6px;
+    top: 120px;
+    position: absolute;
+    transform: rotate(270deg);
+    text-transform: uppercase;
+}
+
+.about-p {
+    
+}
+
+.about-body {
+    padding-left: 100px;
+    position: relative;
 }
