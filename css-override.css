@@ -60,3 +60,16 @@ html {
 .social-icon:hover {
   fill: #fd0001;
 }
+
+.place {
+  text-align: center;
+}
+.country {
+  padding: 20px;
+}
+
+.coder {
+  font-size: 20px;
+  top: 3px;
+  position: relative;
+}
