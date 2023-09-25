@@ -21,3 +21,9 @@ html {
 .headline-image {
     width: 100%;
 }
+
+@media screen and (max-width: 1068px) {
+    .deskonly {
+        display: none;
+    }
+}
