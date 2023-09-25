@@ -1,3 +1,7 @@
+img {
+  pointer-events: none;
+}
+
 html {
     overflow-x: hidden;
     }
@@ -47,3 +51,13 @@ html {
   left: calc(50% - 25px);
     animation: jumpInfinite 1.5s infinite;
   }
+
+.social-icon {
+  padding: 5px;
+  fill: #0f3377;
+  font-size: 40px;
+}
+
+.social-icon:hover {
+  fill: #fd0001;
+}
