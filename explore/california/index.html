@@ -184,8 +184,18 @@ try {
       <!-- Repeat the following code block 30 times to create 30 images -->
       <!-- Column width is set to 2 to create a 5x6 grid -->
       <div class="col-md-2 img-container">
-        <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal1">
-          <img src="https://via.placeholder.com/200x200" class="img-fluid" alt="Image 1">
+        <a class="modal-image-link" href="#" data-bs-toggle="modal" data-bs-target="#imageModal1">
+          <img src="1.jpg" class="img-fluid modal-grid-image" alt="Image 1">
+        </a>
+      </div>
+      <div class="col-md-2 img-container">
+        <a class="modal-image-link" href="#" data-bs-toggle="modal" data-bs-target="#imageModal2">
+          <img src="2.jpg" class="img-fluid modal-grid-image" alt="Image 1">
+        </a>
+      </div>
+      <div class="col-md-2 img-container">
+        <a class="modal-image-link" href="#" data-bs-toggle="modal" data-bs-target="#imageModal3">
+          <img src="3.jpg" class="img-fluid modal-grid-image" alt="Image 1">
         </a>
       </div>
       <!-- End of code block -->
@@ -195,9 +205,23 @@ try {
   <!-- Modals (Repeat these modals 30 times to match the images) -->
   <!-- Use unique IDs for each modal (e.g., #imageModal1, #imageModal2, etc.) -->
   <div class="modal fade" id="imageModal1" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
       <div class="modal-content">
-        <img src="https://via.placeholder.com/800x600" class="img-fluid" alt="Image 1">
+        <img src="1.jpg" class="img-fluid" alt="Image 1">
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="imageModal2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <img src="2.jpg" class="img-fluid" alt="Image 1">
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="imageModal3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <img src="3.jpg" class="img-fluid" alt="Image 1">
       </div>
     </div>
   </div>
