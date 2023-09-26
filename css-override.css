@@ -1,3 +1,8 @@
+html, body {
+  height: 100%;
+  min-height: 100%;
+}
+
 img {
   pointer-events: none;
 }
@@ -98,8 +103,15 @@ footer {
   bottom: 0;
   width: 100%;
   z-index: 99999;
+  padding-top: 20px;
 }
 
 .img-container {
   margin-top: 70px;
+}
+#img_head {
+  position: absolute;
+  //top: 10px; 
+  left: 500px;
+  width: 100%;
 }
