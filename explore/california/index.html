@@ -183,11 +183,16 @@ try {
 
   <div class="container">
 
-
+    <style>
+      /* Add this style to make the carousel transition faster */
+      .carousel-inner {
+        transition-duration: 0.3s; /* Change the duration as needed */
+      }
+    </style>
 
     <div class="row position-relative">
       <div class="col-12">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="1.jpg" class="d-block w-100" alt="...">
