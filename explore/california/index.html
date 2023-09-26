@@ -163,29 +163,49 @@ try {
     
       </style>
 
-
+<script>
+  function switchStyle() {
+  if (document.getElementById('styleSwitch').checked) {
+    document.getElementById('gallery').classList.add("custom");
+    document.getElementById('exampleModal').classList.add("custom");
+  } else {
+    document.getElementById('gallery').classList.remove("custom");
+    document.getElementById('exampleModal').classList.remove("custom");
+  }
+}
+</script>
 </head>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <!--START OF PAGE CONTENT-->
 <body style="">
 
-  https://css-tricks.com/creating-a-modal-image-gallery-with-bootstrap-components/
+  <div class="container">
+    <div class="row">
+      <!-- Repeat the following code block 30 times to create 30 images -->
+      <!-- Column width is set to 2 to create a 5x6 grid -->
+      <div class="col-md-2 img-container">
+        <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal1">
+          <img src="https://via.placeholder.com/200x200" class="img-fluid" alt="Image 1">
+        </a>
+      </div>
+      <!-- End of code block -->
+    </div>
+  </div>
+
+  <!-- Modals (Repeat these modals 30 times to match the images) -->
+  <!-- Use unique IDs for each modal (e.g., #imageModal1, #imageModal2, etc.) -->
+  <div class="modal fade" id="imageModal1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <img src="https://via.placeholder.com/800x600" class="img-fluid" alt="Image 1">
+      </div>
+    </div>
+  </div>
+
+  <!-- Repeat the above modal code 30 times with unique IDs -->
+
   
 </body>
-<script type="text/javascript">
-
-    let hrElement;
-    let counter = 100;
-    for (let i = 0; i < counter; i++) {
-      hrElement = document.createElement("HR");
-      
-        hrElement.style.left = Math.floor(Math.random() * window.innerWidth) + "px";
-        hrElement.style.animationDuration = 0.2 + Math.random() * 0.3 + "s";
-        hrElement.style.animationDelay = Math.random() * 5 + "s";
-     
-      document.body.appendChild(hrElement);
-    }
- </script>
   <footer>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #0f3377 !important;">
         <div class="container-fluid">
