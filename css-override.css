@@ -106,12 +106,12 @@ footer {
   padding-top: 20px;
 }
 
+@media only screen and (max-width: 1000px) {
+  footer {
+      display: none;
+  }
+}
+
 .img-container {
   margin-top: 70px;
-}
-#img_head {
-  position: absolute;
-  //top: 10px; 
-  left: 500px;
-  width: 100%;
 }
