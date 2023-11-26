@@ -1,3 +1,8 @@
+:root {
+  --blue: #0f3377;
+  --red: #fd0001; 
+}
+
 html, body {
   height: 100%;
   min-height: 100%;
@@ -114,4 +119,37 @@ footer {
 
 .modal-image-override {
   height: 400px;
+}
+
+.movie-title {
+  padding-top: 10px;
+  color: var(--blue);
+}
+
+.movie-link {
+  color: var(--red);
+}
+
+.movie-link-style {
+  padding: 0;
+}
+
+.disabled {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.img-disabled {
+  opacity: 0.6;
+  filter: alpha(opacity=90); /* msie */
+}
+
+.about-side {
+  width: auto;
+  height: 80vh
+}
+@media (max-width: 1300px) {
+  .about-side {
+    display: none;
+  }
 }

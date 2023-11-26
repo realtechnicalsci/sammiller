@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../fonts-override.css">
+    <link rel="stylesheet" href="../css-override.css">
+    <link rel="stylesheet" href="../navbar-override.css">
+    
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: white;">
+        <div class="container-fluid">
+          <button class="navbar-toggler toggler-rotate-c icon-black focus-none border-none "type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+          <a class="navbar-brand" style="width: 100px;" href="/index.html"><img class="img-fluid" style="" src="../../logo.png" alt=""></a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../stills/index.html">STILLS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link contact" href="../../motion/index.html">MOTION</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../prints/index.html">PRINTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../explore/index.html">EXPLORE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../about/index.html">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="" href="../contact/index.html">CONTACT</a>
+              </li>
+              
+            </ul>
+            <script src="https://kit.fontawesome.com/cf3de20524.js" crossorigin="anonymous"></script>
+              <a class="nav-link social-icon" href="https://twitter.com/Millerswimmer1"><i class="fa-brands fa-square-x-twitter"></i></a>
+              <a class="nav-link social-icon" href="https://www.facebook.com/profile.php?id=100006930362872"><i class="fa-brands fa-square-facebook"></i></a>
+              <a class="nav-link social-icon" href="https://www.instagram.com/samuel__miller/"><i class="fa-brands fa-square-instagram"></i></a>
+          </div>
+        </div>
+      </nav>
+
+
+<!--ANIMATED BUTTON-->
+      <script>
+        //Grab the buttons
+let toggleNormal = document.getElementsByClassName("toggler-normal");
+let toggleRotate = document.getElementsByClassName("toggler-spin-360");
+let toggleCC = document.getElementsByClassName("toggler-rotate-cc");
+let toggleC = document.getElementsByClassName("toggler-rotate-c");
+let toggleArrowLeft = document.getElementsByClassName("toggler-rotate-cc-arrow-left");
+let toggleArrowRight = document.getElementsByClassName("toggler-rotate-c-arrow-right");
+let toggleArrowUp = document.getElementsByClassName("toggler-rotate-c-arrow-up");
+let toggleArrowDown = document.getElementsByClassName("toggler-rotate-cc-arrow-down");
+
+/*Try and toggle classes*/
+/*Use try catch to avoid errors if button is not on page. Using get by class name then going through the array and adding listeners will make it so that multiple instances of the button will work on the same page.*/
+
+try {
+  for (let i = 0; i < toggleNormal.length; i++) {
+    toggleNormal[i].addEventListener("click", function () {
+      this.classList.toggle("normal-toggle");
+    });
+  }
+} catch {}
+
+try {
+  for (let i = 0; i < toggleRotate.length; i++) {
+    toggleRotate[i].addEventListener("click", function () {
+      this.classList.toggle("rotate-360");
+    });
+  }
+} catch {}
+
+try {
+  for (let i = 0; i < toggleCC.length; i++) {
+    toggleCC[i].addEventListener("click", function () {
+      this.classList.toggle("rotate-cc");
+    });
+  }
+} catch {}
+
+try {
+  for (let i = 0; i < toggleC.length; i++) {
+    toggleC[i].addEventListener("click", function () {
+      this.classList.toggle("rotate-c");
+    });
+  }
+} catch {}
+
+try {
+  for (let i = 0; i < toggleArrowLeft.length; i++) {
+    toggleArrowLeft[i].addEventListener("click", function () {
+      this.classList.toggle("rotate-cc-arrow-left");
+    });
+  }
+} catch {}
+
+try {
+  for (let i = 0; i < toggleArrowRight.length; i++) {
+    toggleArrowRight[i].addEventListener("click", function () {
+      this.classList.toggle("rotate-c-arrow-right");
+    });
+  }
+} catch {}
+
+try {
+  for (let i = 0; i < toggleArrowUp.length; i++) {
+    toggleArrowUp[i].addEventListener("click", function () {
+      this.classList.toggle("rotate-c-arrow-up");
+    });
+  }
+} catch {}
+
+try {
+  for (let i = 0; i < toggleArrowDown.length; i++) {
+    toggleArrowDown[i].addEventListener("click", function () {
+      this.classList.toggle("rotate-cc-arrow-down");
+    });
+  }
+} catch {}
+
+      </script>
+
+
+      
+      <!--rain animation-->
+      <style media="screen">
+        * {
+         margin: 0;
+         padding: 0;
+       }
+     
+       hr {
+         width: 50px;
+         border-color: transparent;
+         border-right-color: rgba(255, 255, 255, 0.7);
+         border-right-width: 50px;
+         position: absolute;
+         bottom: 100%;
+         transform-origin: 100% 50%;
+         animation-name: rain;
+         animation-duration: 1s;
+         animation-timing-function: linear;
+         animation-iteration-count: infinite;
+       }
+    
+
+    
+    
+      </style>
+
+<script>
+  function switchStyle() {
+  if (document.getElementById('styleSwitch').checked) {
+    document.getElementById('gallery').classList.add("custom");
+    document.getElementById('exampleModal').classList.add("custom");
+  } else {
+    document.getElementById('gallery').classList.remove("custom");
+    document.getElementById('exampleModal').classList.remove("custom");
+  }
+}
+</script>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!--START OF PAGE CONTENT-->
+<body style="">
+
+
+
+  <div class="container">
+
+    <style>
+      /* Add this style to make the carousel transition faster */
+      .carousel-inner {
+        transition-duration: 0.3s; /* Change the duration as needed */
+      }
+    </style>
+
+<h1 class="display-1 text-center" style="color: #0f3377; padding: 2vw;">MOTION</h1>
+
+<div class="row">
+  <div class="col-12 col-lg-6 img-container">
+    <img class="img-fluid" src="seek-the-light.jpg" alt="">
+    <div class="movie-info">
+      <h1 class="movie-title">Seek The Light</h1>
+      <p class="movie-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <a class="btn movie-link-style" href="">
+      <h3 class="movie-link">
+        Watch on YouTube ↗
+      </h3>
+    </a>
+    </div>
+  </div>
+  <div class="col-12 col-lg-6 img-container">
+    <img class="img-fluid img-disabled" src="seek-the-light.jpg" alt="">
+    <div class="movie-info">
+      <h1 class="movie-title">More Life</h1>
+      <p class="movie-description">Coming in 2025.</p>
+      <a class="btn disabled movie-link-style" href="">
+      <h3 class="movie-link">
+        Watch on YouTube ↗
+      </h3>
+      </a>
+    </div>
+  </div>
+</div>
+    
+    
+    
+
+
+
+
+
+
+
+
+      </div>
+        
+      
+
+  <!-- Repeat the above modal code 30 times with unique IDs -->
+
+  <footer class="footer mt-auto py-3">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #0f3377 !important;">
+        <div class="container-fluid">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family: Inter;" aria-current="page" href="https://jackmiller.dev">Code By Jack Miller</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+            <a href="#top">
+                <span class="navbar-text">
+                    Return To Top ↑
+                </span>
+            </a>
+        </div>
+    </nav>
+</footer>
+  
+</body>
+  
+</html>
