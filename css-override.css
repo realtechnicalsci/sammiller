@@ -134,6 +134,10 @@ footer {
   padding: 0;
 }
 
+.movie-link:hover {
+  color: var(--blue);
+}
+
 .disabled {
   text-decoration: line-through;
   color: grey;
@@ -156,4 +160,17 @@ footer {
 
 .modal-grid-image {
   height: 500px;
+  margin-bottom: 10px;
+}
+
+.explore-title {
+  color: var(--blue);
+}
+
+.country-link {
+  text-decoration: none;
+  color: black;
+}
+.country-link:hover {
+  color: var(--red);
 }
