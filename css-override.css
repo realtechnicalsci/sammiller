@@ -153,3 +153,7 @@ footer {
     display: none;
   }
 }
+
+.modal-grid-image {
+  height: 500px;
+}
