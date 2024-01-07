@@ -187,6 +187,7 @@ footer {
 
 .modal-grid-image {
   height: auto !important;
+  min-height: 500px;
   max-width: 800px !important;
 }
 
@@ -199,4 +200,10 @@ footer {
   height: 1px;
   background-color: #ccc; /* Adjust the color as needed */
   margin: 10px 0; /* Adjust the margin as needed */
+  margin-bottom: 20px !important;
+}
+
+.card-talk {
+  padding: 50px;
+  padding-left: 30px;
 }
