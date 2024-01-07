@@ -175,7 +175,17 @@ footer {
   color: var(--red);
 }
 
-.carousel-item {
+.carousel-item img {
   height: 800px;
-  max-height: 800px;
+  width: 100%;
+  object-fit: cover
+}
+
+.modal-grid-image {
+  height: auto !important;
+  max-width: 800px !important;
+}
+
+.explore-title {
+  font-size: 60px;
 }
