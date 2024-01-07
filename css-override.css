@@ -174,3 +174,8 @@ footer {
 .country-link:hover {
   color: var(--red);
 }
+
+.carousel-item {
+  height: 800px;
+  max-height: 800px;
+}
