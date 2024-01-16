@@ -186,10 +186,18 @@ footer {
 }
 
 .modal-grid-image {
-  height: auto !important;
-  min-height: 500px;
-  max-width: 800px !important;
+  width: 100% !important;
+  height: auto;
 }
+
+@media only screen and (min-width: 600px) {
+  .modal-grid-image {
+    height: auto !important;
+    min-height: 500px;
+    max-width: 800px !important;
+  }
+}
+
 
 .explore-title {
   font-size: 45px;
