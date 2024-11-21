@@ -26,6 +26,8 @@ video {
 .vertical-center {
     align-items: center;
     text-align: center;
+    height: 100%;
+    align-content: center;
 }
 
 .welcome-links {
@@ -35,10 +37,12 @@ video {
 .welcome-links{
     margin-top: 20px;
     overflow: hidden;
+
 }
 .video-h3 {
     padding: 30px;
     transition: 0.3s;
+    margin: 0;
 }
 .video-h1 {
     position: absolute;
@@ -62,6 +66,6 @@ video {
 }
 
 .explore:hover .video-h3 {
-    height: 200px;
     font-size: 100px !important;
+    margin: 0;
 }
