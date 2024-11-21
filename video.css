@@ -36,13 +36,12 @@ video {
 
 .welcome-links{
     margin-top: 20px;
-    overflow: hidden;
 
 }
 .video-h3 {
-    padding: 30px;
-    transition: 0.3s;
-    margin: 0;
+    z-index: 9999;
+    color: blue;
+    position: fixed;
 }
 .video-h1 {
     position: absolute;
@@ -51,13 +50,13 @@ video {
 }
 
 .explore {
-    height: 0px;
+    height: 50px;
     width: 100%;
-    background-image: url('../motion/1.jpg');
     transition: 0.3s ease;
     background-position: center;
     margin-top: 0px !important;
     padding: 0 !important;
+    background-size: cover;
 }
 
 .explore:hover {
@@ -68,4 +67,22 @@ video {
 .explore:hover .video-h3 {
     font-size: 100px !important;
     margin: 0;
+    color: white;
+    z-index: 9999;
+}
+
+.explore-container {
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    height: 300px;
+    align-content: center;
+}
+
+.explore-container:hover .explore {
+    background-color: white;
+    transform: scaleY(2);
+}
+
+.explore-container:hover .video-h3 {
+    color: black;
 }
