@@ -1,7 +1,6 @@
 .video-container {
     min-width: 100%;
     min-height: 100%;
-    
 }
 
 .video-content {
@@ -20,7 +19,6 @@ video {
     object-fit: cover;
     z-index: -100;
     filter: brightness(41%) saturate(113%);
-    
 }
 
 .vertical-center {
@@ -34,15 +32,22 @@ video {
     padding-top: 20px;
 }
 
-.welcome-links{
+.welcome-links {
     margin-top: 20px;
-
 }
+
 .video-h3 {
     z-index: 9999;
-    color: blue;
-    position: fixed;
+    color: white;
+    position: absolute;  /* Absolutely position the text */
+    top: 50%;  /* Center it vertically */
+    left: 50%;  /* Center it horizontally */
+    transform: translate(-50%, -50%);  /* Adjust to perfectly center */
+    font-size: 4em;  /* Normal font size */
+    transition: color 0.3s ease, font-size 0.3s ease; /* Smooth transition for color and size */
+    pointer-events: none;  /* Prevent hover from affecting the text directly */
 }
+
 .video-h1 {
     position: absolute;
     margin-left: auto;
@@ -64,24 +69,26 @@ video {
     padding: 0 !important;
 }
 
-.explore:hover .video-h3 {
-    font-size: 100px !important;
-    margin: 0;
-    z-index: 9999;
-}
-
 .explore-container {
-    border-top: 1px solid rgba(255,255,255,.1);
-    border-bottom: 1px solid rgba(255,255,255,.1);
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
     height: 300px;
     align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;  /* Ensure it is positioned relative for absolute elements inside it */
+   /* overflow: */ hidden; /* Prevent container from growing too large on hover */
 }
 
+/* When the container is hovered, increase the size of the text and change color */
+.explore-container:hover .video-h3 {
+    color: black;  /* Change text color */
+    font-size: 5em;  /* Increase font size */
+}
+
+/* When the container is hovered, apply changes to the explore div */
 .explore-container:hover .explore {
     background-color: white;
-    transform: scaleY(2);
-}
-
-.explore-container:hover .video-h3 {
-    color: black;
+    transform: scaleY(2); /* Optional: vertical scaling effect */
 }

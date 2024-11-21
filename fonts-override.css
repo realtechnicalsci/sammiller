@@ -6,7 +6,7 @@
     src: url(font/belgiano.otf);
   }
 
-h1, h2, h3, h4, h5, h6, .nav-link, .rotated-text {
+h1, h2, h3, h4, h5, h6, .nav-link, .rotated-text, .video-h3 {
     font-family: 'belgiano', sans-serif !important;
 }
 
