@@ -1,0 +1,47 @@
+:root {
+    --red: rgb(253, 0, 1)
+    --white: #ffffff;
+  }
+  
+
+.white {
+    color: white;
+}
+
+.red {
+    color: rgb(253, 0, 1);
+}
+
+.video-h1 {
+    font-size: 60px !important;
+    font-weight: 800;
+}
+
+.video-h3, a {
+    font-size: 30px !important;
+    text-decoration: none;
+    text-decoration-line: none;
+    font-weight: 100;
+}
+
+.hover-underline-animation {
+    position: relative;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 5px;
+    left: 0;
+    background-color: rgb(253, 0, 1);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }

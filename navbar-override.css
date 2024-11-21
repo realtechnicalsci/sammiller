@@ -324,4 +324,8 @@
     transform-origin: right;
     transform: translateY(-0.05rem) translateX(1.3rem) rotate(-45deg);
   }
+
+  .social-container {
+    display: flex;
+  }
   
