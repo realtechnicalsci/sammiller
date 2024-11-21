@@ -67,7 +67,6 @@ video {
 .explore:hover .video-h3 {
     font-size: 100px !important;
     margin: 0;
-    color: white;
     z-index: 9999;
 }
 
