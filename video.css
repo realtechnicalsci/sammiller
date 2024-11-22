@@ -100,7 +100,7 @@ video {
 
 @media screen and (min-height: 500px) {
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1000px) {
 
     /* When the container is hovered, increase the size of the text and change color */
     .explore-container:hover .video-h3 {
