@@ -57,7 +57,7 @@ video {
 .explore {
     height: 50px;
     width: 100%;
-    transition: 0.3s ease;
+    transition: 0.3s cubic-bezier(0.92, 0.71, 0, 1);
     background-position: center;
     margin-top: 0px !important;
     padding: 0 !important;
