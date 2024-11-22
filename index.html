@@ -27,6 +27,19 @@
 
 
     </script>
+<script
+src="https://code.jquery.com/jquery-3.3.1.js"
+integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+crossorigin="anonymous">
+</script>
+<script> 
+    $(function(){
+      $("#header").load("../header.html"); 
+      $("#footer").load("../footer.html"); 
+    });
+  </script> 
+  <div class="" id="header"></div>
+
 </head>
 <body>
     <div class="video-container">
@@ -34,23 +47,24 @@
                 
                 <div class="welcome-links">
                     
-                    <div class="explore-container">
+                    <div onclick="location.href='../about';" style="cursor:pointer;" class="explore-container">
                         <span onclick="transitionToPage('')" class="video-h3">About</span>
                         <div class="explore">
                             
                         </div>
                     </div>
-                    <div class="explore-container">
-                        <span onclick="transitionToPage('')" class="video-h3">Explore</span>
+                    <div onclick="location.href='../home';" style="cursor:pointer;"  class="explore-container">
+                        <a href="../explore"><span onclick="transitionToPage('')" class="video-h3">Explore</span></a>
                         <div class="explore">
                             
                         </div>
                     </div>
-                    <div class="explore-container">
-                        <span onclick="transitionToPage('')" class="video-h3">Contact</span>
-                        <div class="explore">
+                    <div onclick="location.href='../contact';" style="cursor:pointer;"  class="explore-container">
+                        <span href="../contact" onclick="transitionToPage('')" class="video-h3">Contact</span>
+                        <div href="apple.com" class="explore">
                             
                         </div>
+                    </a>
                     </div>
                     
             </div>
