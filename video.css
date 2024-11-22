@@ -72,6 +72,7 @@ video {
     margin-top: 0px !important;
     padding: 0 !important;
     background-size: cover;
+    z-index: 10;
 }
 
 
@@ -85,6 +86,7 @@ video {
     justify-content: center;
     align-items: center;
     position: relative;  /* Ensure it is positioned relative for absolute elements inside it */
+    transition: 0.1s cubic-bezier(0.92, 0.71, 0, 1);
 }
 
 .image-expand {
@@ -92,7 +94,7 @@ video {
     width: 100%;
     object-fit: cover;
     position: absolute;
-    z-index: 1;
+    z-index: 50;
     transition: 0.9s cubic-bezier(0.7, 0.71, 0, 1);
 }
 
@@ -100,28 +102,25 @@ video {
 
 @media screen and (min-width: 1400px) {
 
-/* When the container is hovered, increase the size of the text and change color */
-.explore-container:hover .video-h3 {
-   
-    font-size: 5em;  /* Increase font size */
-}
+    /* When the container is hovered, increase the size of the text and change color */
+    .explore-container:hover .video-h3 {
+    
+        font-size: 5em;  /* Increase font size */
+    }
 
-/* When the container is hovered, apply changes to the explore div */
-.explore-container:hover .explore {
-    background-color: white;
-    transform: scaleY(1.5); /* Optional: vertical scaling effect */
-}
-.explore:hover {
-    height: 200px;
-    padding: 0 !important;
-}
+    /* When the container is hovered, apply changes to the explore div */
+    .explore-container:hover .explore {
+        background-color: white;
+        transform: scaleY(1.5); /* Optional: vertical scaling effect */
+        height: 200px;
+    }
 
-.explore-container:hover .image-expand {
-    height: calc(100vh/3);
-    width: 100%;
-    display: block;
-    object-fit: cover;
-}
+    .explore-container:hover .image-expand {
+        height: calc(100vh/3);
+        width: 100%;
+        display: block;
+        object-fit: cover;
+    }
 
 }
 }
