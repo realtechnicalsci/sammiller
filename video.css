@@ -7,6 +7,7 @@
 
 body {
     max-height: 100% !important;
+    overflow: hidden;
 }
 
 .video-content {
@@ -95,9 +96,9 @@ video {
     transition: 0.9s cubic-bezier(0.7, 0.71, 0, 1);
 }
 
-@media screen and (min-height: 800px) {
+@media screen and (min-height: 500px) {
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1400px) {
 
 /* When the container is hovered, increase the size of the text and change color */
 .explore-container:hover .video-h3 {
@@ -108,7 +109,7 @@ video {
 /* When the container is hovered, apply changes to the explore div */
 .explore-container:hover .explore {
     background-color: white;
-    transform: scaleY(2); /* Optional: vertical scaling effect */
+    transform: scaleY(1.5); /* Optional: vertical scaling effect */
 }
 .explore:hover {
     height: 200px;
@@ -116,7 +117,7 @@ video {
 }
 
 .explore-container:hover .image-expand {
-    height: 400px;
+    height: calc(100vh/3);
     width: 100%;
     display: block;
     object-fit: cover;
