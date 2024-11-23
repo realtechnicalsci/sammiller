@@ -20,6 +20,10 @@ html {
     background-color: #0f3377 !important;
 }
 
+.navbar-brand {
+  width: 50px;
+}
+
 .text-black {
     color: black !important;
 }

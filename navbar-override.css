@@ -328,4 +328,12 @@
   .social-container {
     display: flex;
   }
+
+  .navBar {
+    max-height: 80px;
+  }
+
+  .navbar-brand {
+    width: 60px !important;
+  }
   

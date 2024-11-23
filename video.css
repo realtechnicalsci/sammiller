@@ -2,7 +2,7 @@
     height: 100%;
     width: 100%;
     position: relative;
-    height: calc(100vh - 126px);
+    height: calc(100vh - 86px);
 }
 
 body {
@@ -47,7 +47,7 @@ video {
 }
 
 .video-h3 {
-    z-index: 9999;
+    z-index: 99;
     color: white;
     position: absolute;  /* Absolutely position the text */
     top: 50%;  /* Center it vertically */
@@ -87,6 +87,12 @@ video {
     align-items: center;
     position: relative;  /* Ensure it is positioned relative for absolute elements inside it */
     transition: 0.1s cubic-bezier(0.92, 0.71, 0, 1);
+    
+}
+@media screen and (max-width: 1000px) {
+.explore-container {
+    z-index: 10;
+}
 }
 
 .image-expand {
@@ -95,7 +101,7 @@ video {
     object-fit: cover;
     position: absolute;
     z-index: 50;
-    transition: 0.9s cubic-bezier(0.7, 0.71, 0, 1);
+    transition: 0.9s cubic-bezier(0.5, 0.71, 0, 1);
 }
 
 @media screen and (min-height: 500px) {

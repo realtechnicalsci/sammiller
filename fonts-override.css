@@ -12,11 +12,11 @@ h1, h2, h3, h4, h5, h6, .nav-link, .rotated-text, .video-h3 {
 
 .nav-link {
     font-size: 25px;
-    color: #0f3377;
+    color: #0f3377 !important;
 }
 .nav-link:hover
  {
-    color: #fd0001;
+    color: #fd0001 !important;
  }
 
  .contact {
