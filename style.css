@@ -100,7 +100,7 @@
   }
 
   .slide-navbar ul li {
-    margin: 20px 0;
+    margin: 5px 0;
   }
 
   .slide-navbar  {
@@ -128,8 +128,8 @@
   .mobile-links {
     text-align: right;
     width: 100%;
-    padding: 0 50px;
-    padding-bottom: 50px;
+    padding: 0 25px;
+    padding-bottom: px;
   }
 
   .icon-list li {
@@ -140,13 +140,13 @@
   .social-container {
     position: absolute;
 bottom: 70px;
-right: 50px;
+right: 25px;
   }
 
   .close-icon {
     position: absolute;
 top: 30px;
-right: 50px;
+right: 25px;
 overflow: hidden;
 cursor: pointer;
   }
