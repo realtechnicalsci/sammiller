@@ -54,7 +54,7 @@ video {
     left: 50%;  /* Center it horizontally */
     transform: translate(-50%, -50%);  /* Adjust to perfectly center */
     font-size: 4em;  /* Normal font size */
-    transition: color 0.3s ease, font-size 0.3s ease; /* Smooth transition for color and size */
+    transition: color 0.3s ease, font-size 1s ease; /* Smooth transition for color and size */
     pointer-events: none;  /* Prevent hover from affecting the text directly */
 }
 
@@ -104,7 +104,7 @@ video {
     transition: 0.9s cubic-bezier(0.5, 0.71, 0, 1);
 }
 
-@media screen and (min-height: 500px) {
+@media screen and (min-height: 600px) {
 
 @media screen and (min-width: 1000px) {
 
@@ -112,20 +112,23 @@ video {
     .explore-container:hover .video-h3 {
     
         font-size: 5em;  /* Increase font size */
+        transition-delay:.1s;
     }
 
     /* When the container is hovered, apply changes to the explore div */
     .explore-container:hover .explore {
         background-color: white;
-        transform: scaleY(1.5); /* Optional: vertical scaling effect */
+        transform: scaleY(2.5); /* Optional: vertical scaling effect */
         height: 200px;
+        transition-delay:.6s;
     }
 
     .explore-container:hover .image-expand {
-        height: calc(100vh/3);
+        height: calc(100vh/1.6);
         width: 100%;
         display: block;
         object-fit: cover;
+        transition-delay:.6s;
     }
 
 }
